@@ -1,0 +1,33 @@
+/*
+ * Remove template code below
+ */
+:host {
+  display: block;
+
+ width: 100%;
+
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  //background-color: #143055;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+main {
+  padding: 0 36px;
+  display: flex;
+  height: 88vh;
+  width: 98vw;
+  border: blue solid 1px;
+}
+

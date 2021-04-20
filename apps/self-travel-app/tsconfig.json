@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./tsconfig.editor.json"
+    },
+    {
+      "path": "./.storybook/tsconfig.json"
+    }
+  ],
+    "angularCompilerOptions": {
+      "fullTemplateTypeCheck": true,
+      "preserveWhitespaces": true,
+      "enableIvy":true,
+      "strictTemplates":true,
+      "trace":true,
+      "strictInjectionParameters":true,
+      "strictInputTypes":true
+    }
+}

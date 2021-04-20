@@ -1,0 +1,16 @@
+:host {
+    position: relative;
+    border: black 1px solid;
+    width: 100%;
+}
+.trips {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    &__list {
+        flex-grow: 2;
+    }
+    &__details {
+        flex-grow: 1;
+    }
+}
