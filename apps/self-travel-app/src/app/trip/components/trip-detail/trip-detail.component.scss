@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.details {
+    border: 1px green solid;
+    flex-basis: 56%;
+}
+.map {
+    border: 1px black solid;
+}

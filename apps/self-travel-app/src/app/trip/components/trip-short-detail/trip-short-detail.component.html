@@ -1,0 +1,5 @@
+<div *ngFor="let row of rows;" class="row">
+  <div *ngFor="let item of row;">
+    {{item | capitalize}}:{{_val[item]}}
+  </div>
+</div>

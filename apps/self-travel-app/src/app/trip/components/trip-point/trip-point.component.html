@@ -1,0 +1,34 @@
+<div class="p-field">
+  <span class="p-float-label">
+<p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"
+  placeholder="Select a Country">
+
+</p-dropdown>
+  </span>
+</div>
+<div class="p-field ">
+  <span class="p-float-label">
+    <input type="text" pInputText>
+    <label for="inputtext">City</label>
+  </span>
+</div>
+<div class="p-field ">
+  <span class="p-float-label">
+    <p-calendar [(ngModel)]="arrival"></p-calendar>
+    <label for="inputtext">Arrival Day</label>
+  </span>
+</div>
+<div class="p-field ">
+  <span class="p-float-label">
+    <p-calendar [(ngModel)]="departure"></p-calendar>
+    <label for="inputtext">Departure day</label>
+  </span>
+</div>
+<div class="p-field-checkbox">
+    <p-checkbox [(ngModel)]="isEndPoint" [binary]="true" inputId="binary"></p-checkbox>
+    <label for="binary">Endpoint</label>
+</div>
+<div class="p-field-checkbox">
+    <p-checkbox [(ngModel)]="isStartPoint" [binary]="true" inputId="binary"></p-checkbox>
+    <label for="binary">Start Point</label>
+</div>

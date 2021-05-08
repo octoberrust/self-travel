@@ -1,0 +1,17 @@
+<div class="p-field p-col-12 p-md-4">
+    <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText />
+        <label for="inputtext">Trip name</label>
+    </span>
+</div>
+<self-travel-trip-point></self-travel-trip-point>
+<self-travel-trip-point></self-travel-trip-point>
+<button pButton type="button" label="add point" (click)="addPoint()"></button>
+<div *ngFor="let alias of formPoints.controls; let i = index">
+    <!-- The repeated alias template -->
+    <self-travel-trip-point></self-travel-trip-point>
+</div>
+<button pButton type="button" label="add budget" (click)="addPoint()"></button>
+<button pButton type="button" label="add tour" (click)="addPoint()"></button>
+<button pButton type="button" label="add lodging" (click)="addPoint()"></button>
+<button pButton type="button" label="add walet" (click)="addPoint()"></button>

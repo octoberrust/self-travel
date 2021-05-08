@@ -1,2 +1,74 @@
-<p>trip-detail works!</p>
-<ng-container let tr=trip$ |*ngFor="let item of trip$ | async as list"></ng-container>
+<div class="details">
+  <ng-container *ngIf="trip$ | async as tr">
+    <p-panel header="Trip Name">
+      <div>
+        <span class="p-float-label">
+          <input id="frc" type="text" readonly pInputText>
+          <label for="frc">From City</label>
+        </span>
+        <span class="p-float-label">
+          <input id="frcou" type="text" readonly pInputText>
+          <label for="frcou">From Country</label>
+        </span>
+        <span class="p-float-label">
+          <input id="starton" type="text" readonly pInputText>
+          <label for="starton">Starts on</label>
+        </span>
+      </div>
+
+      <div>
+        <span class="p-float-label">
+          <input id="tc" type="text" readonly pInputText>
+          <label for="tc">To City</label>
+        </span>
+        <span class="p-float-label">
+          <input id="tcou" type="text" readonly pInputText>
+          <label for="tcou">To Country</label>
+        </span>
+        <span class="p-float-label">
+          <input id="endon" type="text" readonly pInputText>
+          <label for="endon">End's on</label>
+        </span>
+      </div>
+
+
+    </p-panel>
+
+    <p-panel header="Ticket Info">
+      <div>
+        <span class="p-float-label">
+          <input id="carrier" type="text" readonly pInputText>
+          <label for="carrier">Carrier</label>
+        </span>
+        <span class="p-float-label">
+          <input id="frcou" type="text" readonly pInputText>
+          <label for="frcou">Type</label>
+        </span>
+      </div>
+
+      <div>
+        <span class="p-float-label">
+          <input id="dep" type="text" readonly pInputText>
+          <label for="dep">Departure</label>
+        </span>
+        <span class="p-float-label">
+          <input id="arr" type="text" readonly pInputText>
+          <label for="arr">Arrival</label>
+        </span>
+      </div>
+
+      <div>
+        <a href="">Ticket Link</a>
+
+
+      </div>
+
+
+    </p-panel>
+
+  </ng-container>
+</div>
+
+<div class="map">
+  mapa
+</div>

@@ -1,20 +1,17 @@
 {
-  "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
-    ".eslintrc.json": "*"
-  },
-  "affected": { "defaultBase": "master" },
-  "npmScope": "self-travel",
-  "tasksRunnerOptions": {
-    "default": {
-
+    "implicitDependencies": {
+        "package.json": { "dependencies": "*", "devDependencies": "*" },
+        ".eslintrc.json": "*"
+    },
+    "affected": { "defaultBase": "master" },
+    "npmScope": "self-travel",
+    "tasksRunnerOptions": { "default": {} },
+    "projects": {
+        "self-travel-app": { "tags": [] },
+        "self-travel-app-e2e": {
+            "tags": [],
+            "implicitDependencies": ["self-travel-app"]
+        },
+        "trip-domain": { "tags": [] }
     }
-  },
-  "projects": {
-    "self-travel-app": { "tags": [] },
-    "self-travel-app-e2e": {
-      "tags": [],
-      "implicitDependencies": ["self-travel-app"]
-    }
-  }
 }

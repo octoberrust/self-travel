@@ -1,9 +1,13 @@
-import { Url } from "url";
 import { mocks_Travel } from "../../mocks/mocks.factory";
-import { TravelPlace } from "../faker/trip-mock.faker";
+import { TravelPlace } from "../faker/TravelPlace";
+import { Lodging } from "./lodging.entity.model";
+import { Ticket } from "./ticket.entity.model";
+import { Tours } from "./tours.entity.model";
+import { Wallet } from "./wallet.entity.model";
 
 export interface Travel {
   id: string;
+  name: string;
   from: TravelPlace;
   to: TravelPlace;
   ticket: Ticket;
@@ -15,28 +19,10 @@ export interface Travel {
   tripEnd: Date;
 
 }
-export interface Ticket {
-  id: string;
-  type: string;//train,car, airplane,
-  departure: Date
-  arrival: Date
-  link: string
-}
-export interface Wallet {
-  id: string;
-  established: string;
-}
-export interface Lodging {
-  name: string;
-  postCode: string;
-  city: string;
-  country: string;
-  state: string;
-  streetAddress: string;
-}
-export interface Tours{
-  name:string;
-}
+
+
+
+
 // export interface TravelPoint{
 // place:string;
 // longitude:string;

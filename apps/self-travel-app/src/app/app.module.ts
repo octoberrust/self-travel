@@ -13,6 +13,10 @@ import { TicketsModule } from './tickets/tickets.module';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from '../environments/environment';
 import { AkitaNgRouterStoreModule } from '@datorama/akita-ng-router-store';
+import { StringManipulationModule } from './utilities/string-manipulation/string-manipulation.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppRouteRoutingModule } from './app-route/app-route-routing.module';
+
 
 
 @NgModule({
@@ -29,9 +33,14 @@ import { AkitaNgRouterStoreModule } from '@datorama/akita-ng-router-store';
     TicketsModule,
     //environment.production ? [] : AkitaNgDevtools.forRoot(),
      AkitaNgDevtools.forRoot(),
-    AkitaNgRouterStoreModule
+    AkitaNgRouterStoreModule,
+    StringManipulationModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [
+
+  ],
 })
 export class AppModule { }
